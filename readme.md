@@ -36,3 +36,5 @@ NOTE: "database" is just the name I picked - you can do anything you like.
 To run, just type **npm start** in the terminal:
 
 ![gif_one](https://github.com/KorenEzri/jsondb/blob/main/jsondbexamplegif.gif)
+
+# Author: Koren Ben Ezri
