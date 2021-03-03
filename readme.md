@@ -1,3 +1,5 @@
+![](https://img.shields.io/badge/jsonDB-By%20Koren-brightgreen)
+
 # JsonDB - a locally hosted, easy-to-use npm-packed database :D
 
 ## Purpose
