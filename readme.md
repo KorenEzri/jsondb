@@ -55,7 +55,7 @@ Each JSON file created will have a different unique ID via the uuid npm package.
 </code>
 
 - View all JSON files: a GET request to <code>/all</code> (this gives you an array of file names!)
-- View specific JSON file (if it exists): a GET request to '/b/:id' (this gives you the actual file contents)
+- View specific JSON file (if it exists): a GET request to <code>/b/:id</code> (this gives you the actual file contents)
 - Create a JSON file: a POST request to <code>/</code>
 - Update a JSON file by ID: a PUT request to <code>/b/:id</code>
 - Delete a JSON file by ID: a DELETE request to <code>/b/:id</code>
