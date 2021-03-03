@@ -1,0 +1,24 @@
+{
+  "name": "@korenezri/jsondb",
+  "version": "1.0.0",
+  "main": "backend/index.js",
+  "scripts": {
+    "test": "jest --verbose",
+    "start": "node index",
+    "dev": "nodemon index"
+  },
+  "keywords": [],
+  "author": "Koren Ben Ezri",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^26.6.3",
+    "nodemon": "^2.0.7",
+    "supertest": "^6.1.3"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "moment": "^2.29.1",
+    "uuid": "^8.3.2"
+  }
+}
