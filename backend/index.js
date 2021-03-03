@@ -3,10 +3,12 @@ const express = require("express");
 const uuid = require("uuid");
 const fs = require("fs");
 const app = express();
-
-app.use(function (req, res, next) {
-  setTimeout(next, 1000);
-});
+const cors = require("cors");
+app.use(cors({
+  'allowedHeaders': ['Content-Type'], 
+  'origin': '*',
+  'preflightContinue': true
+}));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
@@ -133,7 +135,7 @@ app.delete("/b/:id", (req, res) => {
 
 //ROUTES END
 
-const PORT = process.env.PORT || 3001;
+const PORT =  3001;
 
 module.exports = app;
 // app.listen("3001", () => console.log(`Server Started on port 3001`));
