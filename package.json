@@ -34,7 +34,6 @@
     "moment": "^2.29.1",
     "uuid": "^8.3.2",
     "cors": "^2.8.5"
-
   },
   "deprecated": false,
   "devDependencies": {
@@ -51,5 +50,5 @@
     "start": "node index",
     "test": "jest --verbose"
   },
-  "version": "2.0.0"
+  "version": "3.0.0"
 }
