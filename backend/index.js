@@ -16,7 +16,7 @@ app.use(express.urlencoded({ extended: false }));
 
 const viewAllBins = () => {
   const listOfBins = [];
-  const binsDirectory = fs.readdirSync(`backend/bins/`);
+  const binsDirectory = fs.readdirSync(`node_modules/@korenezri/jsondb/backend/bins/`);
   binsDirectory.forEach((file) => {
     listOfBins.push(file);
   });
@@ -43,7 +43,7 @@ app.get("/all", (req, res) => {
 
 //on GET request: if the specified ID exists, show appropriate bin (show ToDoList basically)
 app.get("/b/:id", (req, res) => {
-  fs.readFile(`backend/bins/${req.params.id}.json`, "utf8", (err, data) => {
+  fs.readFile(`node_modules/@korenezri/jsondb/backend/bins/${req.params.id}.json`, "utf8", (err, data) => {
     if (
       !/^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$/.test(
         req.params.id
@@ -75,7 +75,7 @@ app.post("/", (req, res) => {
     //   );
     // }
     response.push(binID);
-    fs.writeFile(`backend/bins/${binID}.json`, `${json}`, "utf8", () => {
+    fs.writeFile(`node_modules/@korenezri/jsondb/backend/bins/${binID}.json`, `${json}`, "utf8", () => {
       res.json(`${response}`);
     });
   } catch {
@@ -103,7 +103,7 @@ app.put("/b/:id", (req, res, next) => {
   if (!listOfBins.includes(`${BIN_ID}.json`)) {
     res.status(400).json(`File ${BIN_ID} not found`);
   } else {
-    fs.writeFile(`backend/bins/${BIN_ID}.json`, json, "utf8", (data) => {
+    fs.writeFile(`node_modules/@korenezri/jsondb/backend/bins/${BIN_ID}.json`, json, "utf8", (data) => {
       res.status(201).send(req.body);
     });
   }
