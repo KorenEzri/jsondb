@@ -33,7 +33,7 @@ NOTE: "database" is just the name I picked - you can do anything you like.
 
 -  <code>"database": "node node_modules/@korenezri/jsondb/server.js"</code> - This is the jsonDB databse
 -  <code>"main": "node index.js"</code> - Your own node.js server you're trying to run
--  <code>"start": "concurrently \"npm run main\" \"npm run database\""</code> - Set up the 'concurrently' package
+-  <code>"start": "concurrently \ "npm run main\" \ "npm run database\""</code> - Set up the 'concurrently' package (NO SPACES BETWEEN \ and " - this is just Github's formatting.
 
 ![pic_three](https://github.com/KorenEzri/jsondb/blob/main/multipleservers.PNG)
 
