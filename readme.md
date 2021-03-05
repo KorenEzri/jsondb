@@ -6,6 +6,8 @@
 
 Basically, it's a very easy-to-use database you can install and run on your local host along with another server(s). Examples, explanations etc as follows:
 
+# (A note for Cyber4s students: Please view the bottom part to see how to best use this as a DB for your tasks)
+
 ## Installation
 
 1) In your terminal, just run *npm i @korenezri/jsondb* . This will set you up with the latest version.
@@ -48,8 +50,7 @@ Each JSON file created will have a different unique ID via the uuid npm package.
 
 <code> {
   "record": [
-    [
-    ]
+
   ]
 }
 </code>
@@ -59,6 +60,10 @@ Each JSON file created will have a different unique ID via the uuid npm package.
 - Create a JSON file: a POST request to <code>/</code>
 - Update a JSON file by ID: a PUT request to <code>/b/:id</code>
 - Delete a JSON file by ID: a DELETE request to <code>/b/:id</code>
+
+# Using as a database - "default.json and users.json"
+
+Basically, the package comes with two default bins that you can update regularly, their IDs respectively are "default" and "users" (unlike any other new bin you create which will be given a random uuid id). **You should only use those two as your database as they will always be there when you install the package and you won't need to change your code** . Remember - running npmi on a new computer will download the package anew, and will not have all the other bins your created - just two empty default bins - "default" and "users".
 
 ### Dependencies
 
