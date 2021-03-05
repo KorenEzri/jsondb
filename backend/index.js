@@ -55,7 +55,7 @@ app.get("/b/:id", (req, res) => {
         !/^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$/.test(
           req.params.id
         ) &&
-        req.params.id !== "default"
+        req.params.id !== "default" && req.params.id !== "users"
       ) {
         res
           .status(404)
@@ -86,7 +86,7 @@ app.post("/", (req, res) => {
       }
     );
   } catch {
-    res.status(400).send(`ERROR!, ${err}`);
+    res.status(400).send(`ERROR!, in index.js of DB:  ${err}`);
   }
 });
 
@@ -96,7 +96,7 @@ app.put("/b/:id", (req, res, next) => {
     !/^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$/.test(
       req.params.id
     ) &&
-    req.params.id !== "cyber4s" &&
+    req.params.id !== "users" &&
     req.params.id !== "default"
   ) {
     res.status(404).json(`This ID "${req.params.id}" is not a legal file-ID.`);
@@ -106,7 +106,6 @@ app.put("/b/:id", (req, res, next) => {
   obj.record.push(req.body);
   let json = JSON.stringify(obj, null, 2);
   const listOffiles = viewAllFiles();
-  console.log(listOffiles);
   if (!listOffiles.includes(`${file_ID}.json`)) {
     res.status(400).json(`File ${file_ID} not found`);
   } else {
