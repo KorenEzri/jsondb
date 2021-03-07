@@ -1,28 +1,28 @@
 {
-  "_from": "@korenezri/jsondb@^7.0.0",
-  "_id": "@korenezri/jsondb@7.0.0",
+  "_from": "@korenezri/jsondb@^4.0.0",
+  "_id": "@korenezri/jsondb@4.0.0",
   "_inBundle": false,
-  "_integrity": "sha512-jcWkVko+Zt5Pr5KUwcEE8+zlNjLhGRxxs8YRYP6KlratobQcrJd4oa8CZXVDjsDfhxGuwxY4aqQzlmByauvO7Q==",
+  "_integrity": "sha512-iBAVfGOJ26W7L1/Nyy+kkUCYl59DWQdOGh5dR0IeW8ZgjdUrpuB6Y90Ay8EM/HDJaxU7JQV1KzJmbJ5ca9LN6g==",
   "_location": "/@korenezri/jsondb",
   "_phantomChildren": {},
   "_requested": {
     "type": "range",
     "registry": true,
-    "raw": "@korenezri/jsondb@^7.0.0",
+    "raw": "@korenezri/jsondb@^4.0.0",
     "name": "@korenezri/jsondb",
     "escapedName": "@korenezri%2fjsondb",
     "scope": "@korenezri",
-    "rawSpec": "^7.0.0",
+    "rawSpec": "^4.0.0",
     "saveSpec": null,
-    "fetchSpec": "^7.0.0"
+    "fetchSpec": "^4.0.0"
   },
   "_requiredBy": [
     "/"
   ],
-  "_resolved": "https://registry.npmjs.org/@korenezri/jsondb/-/jsondb-7.0.0.tgz",
-  "_shasum": "03ab50d7576df2e6dbdeca268c0499dbb55f384d",
-  "_spec": "@korenezri/jsondb@^7.0.0",
-  "_where": "C:\\Users\\koren\\Documents\\GitHub\\Url-Shortener-Task",
+  "_resolved": "https://registry.npmjs.org/@korenezri/jsondb/-/jsondb-4.0.0.tgz",
+  "_shasum": "a5d1526476188ff92bd32403237556b00bbe19f3",
+  "_spec": "@korenezri/jsondb@^4.0.0",
+  "_where": "C:\\Users\\Koren\\Documents\\GitHub\\Url-Shortener-Task",
   "author": {
     "name": "Koren Ben Ezri"
   },
@@ -35,7 +35,6 @@
     "uuid": "^8.3.2"
   },
   "deprecated": false,
-  "description": "![](https://img.shields.io/badge/jsonDB-By%20Koren-brightgreen)",
   "devDependencies": {
     "jest": "^26.6.3",
     "nodemon": "^2.0.7",
