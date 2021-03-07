@@ -55,7 +55,7 @@ app.get("/b/:id", (req, res) => {
         !/^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$/.test(
           req.params.id
         ) &&
-        req.params.id !== "default" && req.params.id !== "users"
+        req.params.id !== "default" && req.params.id !== "users" && req.params.id !== "test"
       ) {
         res
           .status(404)
@@ -92,12 +92,13 @@ app.post("/", (req, res) => {
 
 //on PUT request: update the file according to it's id
 app.put("/b/:id", (req, res, next) => {
+  console.log('ARRIVED HERE')
   if (
     !/^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$/.test(
       req.params.id
     ) &&
     req.params.id !== "users" &&
-    req.params.id !== "default"
+    req.params.id !== "default" && req.params.id !== "test"
   ) {
     res.status(404).json(`This ID "${req.params.id}" is not a legal file-ID.`);
   }

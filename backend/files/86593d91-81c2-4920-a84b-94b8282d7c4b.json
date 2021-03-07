@@ -1,0 +1,20 @@
+{
+  "record": [
+    [
+      {
+        "long": "https://stackoverflow.com/questions/48248832/stylesheet-not-loaded-because-of-mime-type",
+        "short": "http://localhost:3000/ABgDpQhH8",
+        "urlCode": "ABgDpQhH8",
+        "clickCount": 0,
+        "creationDate": "2021-03-07T4:24:14.598 "
+      },
+      {
+        "long": "https://medium.com/@chung.andrew7/node-testing-environment-for-database-64780be50ad0",
+        "short": "http://localhost:3000/fxKOsZPLf",
+        "urlCode": "fxKOsZPLf",
+        "clickCount": 0,
+        "creationDate": "2021-03-07T4:24:29.13 "
+      }
+    ]
+  ]
+}
